@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skylink Travels Dubai | Visa, Attestation & Travel Services | dreamskylink.com</title>
+  <meta name="description" content="Skylink Travels & Document Clearing – Dubai's trusted travel agency for UAE Visit Visa, Attestation, Hajj & Umrah, Flight Booking and Document Clearing. Offices in Dubai, Kuttiady and Nadapuram." />
+  <meta name="keywords" content="Skylink Travels Dubai, Visa Attestation Dubai, Best Travel Agency Kuttiady, Best Travel Agency Nadapuram, Umrah Packages Dubai, UAE Visit Visa, Document Clearing Dubai, dreamskylink" />
+  <meta property="og:title" content="Skylink Travels & Document Clearing – Dubai" />
+  <meta property="og:description" content="From Process to Approval – trusted UAE visa and travel experts." />
+  <meta property="og:url" content="https://www.dreamskylink.com" />
+  <link rel="canonical" href="https://www.dreamskylink.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sky: {
+              navy: '#0A1628',
+              blue: '#0D2B6B',
+              mid: '#1A4FBB',
+              bright: '#2575FC',
+              gold: '#F5B800',
+              light: '#E8F0FE',
+            }
+          },
+          fontFamily: {
+            display: ['Bebas Neue', 'sans-serif'],
+            body: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: 'Outfit', sans-serif; background: #0A1628; color: #fff; overflow-x: hidden; }
+
+    /* ── HERO ── */
+    .hero-bg {
+      background: linear-gradient(160deg, #0A1628 0%, #0D2B6B 40%, #1A3A7C 70%, #0A1628 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1600&q=80') center/cover no-repeat;
+      opacity: 0.18;
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 60% 40%, rgba(37,117,252,0.18) 0%, transparent 70%);
+    }
+    .star-field {
+      position: absolute; inset: 0; pointer-events: none;
+      background-image: radial-gradient(1.5px 1.5px at 15% 20%, rgba(255,255,255,0.7) 0%, transparent 100%),
+        radial-gradient(1px 1px at 45% 55%, rgba(255,255,255,0.5) 0%, transparent 100%),
+        radial-gradient(2px 2px at 75% 30%, rgba(255,255,255,0.6) 0%, transparent 100%),
+        radial-gradient(1px 1px at 90% 70%, rgba(255,255,255,0.4) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 30% 80%, rgba(255,255,255,0.5) 0%, transparent 100%);
+    }
+
+    /* ── NAV ── */
+    .nav-scroll { backdrop-filter: blur(20px); background: rgba(10,22,40,0.92); }
+
+    /* ── CARDS ── */
+    .service-card {
+      background: linear-gradient(135deg, rgba(13,43,107,0.7) 0%, rgba(10,22,40,0.9) 100%);
+      border: 1px solid rgba(37,117,252,0.2);
+      transition: all 0.35s ease;
+    }
+    .service-card:hover {
+      border-color: #F5B800;
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(37,117,252,0.2);
+    }
+    .service-card:hover .card-icon { color: #F5B800; transform: scale(1.15); }
+    .card-icon { transition: all 0.35s ease; }
+
+    /* ── DESTINATION ── */
+    .dest-card {
+      position: relative; overflow: hidden; border-radius: 16px;
+      transition: transform 0.4s ease;
+    }
+    .dest-card:hover { transform: scale(1.04); }
+    .dest-card::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(10,22,40,0.9) 0%, transparent 60%);
+    }
+    .dest-card img { width: 100%; height: 260px; object-fit: cover; display: block; }
+
+    /* ── TRUST BADGE ── */
+    .trust-badge {
+      background: linear-gradient(135deg, #F5B800 0%, #FFA500 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(37,117,252,0.5); }
+      50% { box-shadow: 0 0 0 15px rgba(37,117,252,0); }
+    }
+    .animate-fadeUp { animation: fadeUp 0.8s ease forwards; }
+    .animate-float { animation: float 4s ease-in-out infinite; }
+    .animate-slideIn { animation: slideIn 0.7s ease forwards; }
+    .pulse-glow { animation: pulse-glow 2.5s infinite; }
+    .delay-1 { animation-delay: 0.15s; opacity: 0; }
+    .delay-2 { animation-delay: 0.3s; opacity: 0; }
+    .delay-3 { animation-delay: 0.45s; opacity: 0; }
+    .delay-4 { animation-delay: 0.6s; opacity: 0; }
+
+    /* ── GRADIENT TEXT ── */
+    .grad-text {
+      background: linear-gradient(90deg, #fff 0%, #93C5FD 60%, #F5B800 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-text {
+      background: linear-gradient(90deg, #F5B800 0%, #FFF176 50%, #F5B800 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* ── WHATSAPP FLOAT ── */
+    .wa-float {
+      position: fixed; bottom: 28px; right: 28px; z-index: 999;
+      width: 60px; height: 60px; border-radius: 50%;
+      background: #25D366;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 24px rgba(37,211,102,0.5);
+      cursor: pointer;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .wa-float:hover { transform: scale(1.1); box-shadow: 0 10px 36px rgba(37,211,102,0.7); }
+
+    /* ── SECTION DIVIDER ── */
+    .wave-divider { line-height: 0; }
+    .wave-divider svg { display: block; }
+
+    /* ── CTA BUTTON ── */
+    .btn-primary {
+      background: linear-gradient(135deg, #2575FC 0%, #1A4FBB 100%);
+      transition: all 0.3s ease;
+      position: relative; overflow: hidden;
+    }
+    .btn-primary::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, #F5B800 0%, #FFA500 100%);
+      opacity: 0; transition: opacity 0.3s ease;
+    }
+    .btn-primary:hover::before { opacity: 1; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(245,184,0,0.4); }
+    .btn-primary span { position: relative; z-index: 1; }
+
+    .btn-gold {
+      background: linear-gradient(135deg, #F5B800 0%, #FFA500 100%);
+      color: #0A1628; font-weight: 700;
+      transition: all 0.3s ease;
+    }
+    .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(245,184,0,0.5); filter: brightness(1.1); }
+
+    /* ── DIVIDER LINE ── */
+    .divider-line {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(37,117,252,0.4), transparent);
+    }
+
+    /* ── POSTER SCROLL ── */
+    .poster-scroll { display: flex; gap: 20px; animation: scrollPoster 30s linear infinite; }
+    @keyframes scrollPoster {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .poster-track { overflow: hidden; }
+    .poster-track:hover .poster-scroll { animation-play-state: paused; }
+
+    /* ── MOBILE MENU ── */
+    #mobile-menu { transition: max-height 0.35s ease, opacity 0.35s ease; max-height: 0; opacity: 0; overflow: hidden; }
+    #mobile-menu.open { max-height: 400px; opacity: 1; }
+
+    /* ── SECTION HEADER ── */
+    .section-tag {
+      display: inline-block;
+      background: rgba(37,117,252,0.15);
+      border: 1px solid rgba(37,117,252,0.3);
+      border-radius: 999px;
+      padding: 4px 16px;
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #93C5FD;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4">
+  <div class="max-w-7xl mx-auto px-5 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="#home" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full bg-sky-blue flex items-center justify-center border-2 border-sky-bright">
+        <svg viewBox="0 0 24 24" class="w-5 h-5 fill-white">
+          <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/>
+        </svg>
+      </div>
+      <div>
+        <span class="font-display text-2xl tracking-wide text-white">skylink</span>
+        <p class="text-[9px] text-sky-bright/80 tracking-widest uppercase -mt-1">Travel & Document Clearing</p>
+      </div>
+    </a>
+    <!-- Desktop Nav -->
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="#services" class="text-white/70 hover:text-white transition-colors">Services</a>
+      <a href="#dubai" class="text-white/70 hover:text-white transition-colors">Dubai Visa</a>
+      <a href="#destinations" class="text-white/70 hover:text-white transition-colors">Destinations</a>
+      <a href="#about" class="text-white/70 hover:text-white transition-colors">About</a>
+      <a href="#contact" class="text-white/70 hover:text-white transition-colors">Contact</a>
+      <a href="tel:+971582324891" class="btn-gold px-5 py-2.5 rounded-full text-sm font-bold flex items-center gap-2">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02z"/></svg>
+        Call Dubai
+      </a>
+    </div>
+    <!-- Hamburger -->
+    <button onclick="toggleMenu()" class="md:hidden text-white p-2">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden bg-sky-navy/95 backdrop-blur-xl border-t border-sky-blue/20 px-5">
+    <div class="py-4 flex flex-col gap-4 text-sm font-medium">
+      <a href="#services" onclick="closeMenu()" class="text-white/80 hover:text-sky-gold transition-colors py-2">Services</a>
+      <a href="#dubai" onclick="closeMenu()" class="text-white/80 hover:text-sky-gold transition-colors py-2">Dubai Visa</a>
+      <a href="#destinations" onclick="closeMenu()" class="text-white/80 hover:text-sky-gold transition-colors py-2">Destinations</a>
+      <a href="#about" onclick="closeMenu()" class="text-white/80 hover:text-sky-gold transition-colors py-2">About</a>
+      <a href="#contact" onclick="closeMenu()" class="text-white/80 hover:text-sky-gold transition-colors py-2">Contact</a>
+      <a href="tel:+971582324891" class="btn-gold px-5 py-3 rounded-full text-center font-bold mt-2">📞 Call Dubai: +971 58 232 4891</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+<section id="home" class="hero-bg min-h-screen flex items-center pt-20 pb-16">
+  <div class="star-field"></div>
+  <div class="max-w-7xl mx-auto px-5 relative z-10 w-full">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Left Content -->
+      <div>
+        <div class="section-tag animate-fadeUp">✈ Dubai's Trusted Travel Experts</div>
+        <h1 class="font-display text-6xl sm:text-7xl lg:text-8xl leading-none mt-4 animate-fadeUp delay-1">
+          <span class="grad-text">TRAVEL</span><br>
+          <span class="text-white">YOUR</span><br>
+          <span class="gold-text">WAY.</span>
+        </h1>
+        <p class="text-white/70 text-lg mt-6 max-w-md leading-relaxed animate-fadeUp delay-2">
+          Don't miss your best vacation opportunity. From UAE visas to global holidays — we make every step of your journey simple and smooth.
+        </p>
+        <div class="flex flex-wrap gap-4 mt-8 animate-fadeUp delay-3">
+          <a href="#dubai" class="btn-primary px-7 py-3.5 rounded-full font-semibold text-white text-base">
+            <span>Apply for UAE Visa →</span>
+          </a>
+          <a href="#contact" class="px-7 py-3.5 rounded-full font-semibold text-white border border-white/20 hover:border-sky-gold hover:text-sky-gold transition-all text-base">
+            Contact Us
+          </a>
+        </div>
+        <!-- Trust Pills -->
+        <div class="flex flex-wrap gap-3 mt-8 animate-fadeUp delay-4">
+          <span class="bg-white/5 border border-white/10 rounded-full px-4 py-1.5 text-xs text-white/60">✓ IATA Accredited</span>
+          <span class="bg-white/5 border border-white/10 rounded-full px-4 py-1.5 text-xs text-white/60">✓ Same Day Processing</span>
+          <span class="bg-white/5 border border-white/10 rounded-full px-4 py-1.5 text-xs text-white/60">✓ Process to Approval</span>
+          <span class="bg-white/5 border border-white/10 rounded-full px-4 py-1.5 text-xs text-white/60">✓ 3 Office Locations</span>
+        </div>
+      </div>
+      <!-- Right: Stats Card -->
+      <div class="hidden lg:flex flex-col items-center gap-6">
+        <div class="animate-float bg-gradient-to-br from-sky-blue/40 to-sky-navy/80 backdrop-blur-xl rounded-3xl p-8 border border-sky-bright/20 w-full max-w-sm">
+          <div class="grid grid-cols-2 gap-5">
+            <div class="text-center p-4 bg-white/5 rounded-2xl">
+              <p class="font-display text-4xl text-sky-gold">60</p>
+              <p class="text-xs text-white/60 mt-1">Day Visit Visa</p>
+            </div>
+            <div class="text-center p-4 bg-white/5 rounded-2xl">
+              <p class="font-display text-4xl text-sky-gold">30</p>
+              <p class="text-xs text-white/60 mt-1">Day Visit Visa</p>
+            </div>
+            <div class="text-center p-4 bg-white/5 rounded-2xl col-span-2">
+              <p class="font-display text-3xl text-white">Same Day</p>
+              <p class="text-xs text-white/60 mt-1">Visa Processing</p>
+            </div>
+          </div>
+          <div class="mt-5 pt-5 border-t border-white/10 flex items-center justify-between">
+            <div>
+              <p class="text-xs text-white/50">Dubai Contact</p>
+              <a href="tel:+971582324891" class="text-sky-gold font-semibold text-sm hover:underline">+971 58 232 4891</a>
+            </div>
+            <div class="bg-sky-bright/20 rounded-full p-3">
+              <svg class="w-5 h-5 text-sky-bright" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02z"/></svg>
+            </div>
+          </div>
+        </div>
+        <!-- Destination tags floating -->
+        <div class="flex gap-3 flex-wrap justify-center">
+          <span class="bg-sky-blue/30 border border-sky-bright/20 rounded-full px-4 py-1.5 text-sm text-white/80">🕌 Dubai</span>
+          <span class="bg-sky-blue/30 border border-sky-bright/20 rounded-full px-4 py-1.5 text-sm text-white/80">🏙️ Muscat</span>
+          <span class="bg-sky-blue/30 border border-sky-bright/20 rounded-full px-4 py-1.5 text-sm text-white/80">🌃 Kuwait</span>
+          <span class="bg-sky-blue/30 border border-sky-bright/20 rounded-full px-4 py-1.5 text-sm text-white/80">✨ Doha</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Scroll Cue -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10">
+    <p class="text-white/30 text-xs tracking-widest uppercase">Scroll</p>
+    <div class="w-px h-10 bg-gradient-to-b from-white/30 to-transparent"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ POSTER GALLERY ═══════════════════════════ -->
+<section class="py-10 bg-sky-navy overflow-hidden">
+  <p class="text-center text-xs tracking-widest uppercase text-white/30 mb-6">Our Latest Campaigns</p>
+  <div class="poster-track relative">
+    <div class="poster-scroll w-max">
+      <!-- Poster images repeated for infinite loop -->
+      <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=300&q=80" alt="Dubai" class="h-40 w-56 object-cover rounded-xl flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity" />
+      <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=300&q=80" alt="Travel" class="h-40 w-56 object-cover rounded-xl flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity" />
+      <img src="https://images.unsplash.com/photo-1531804055935-76f44d7c3621?w=300&q=80" alt="Muscat" class="h-40 w-56 object-cover rounded-xl flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity" />
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&q=80" alt="Globe" class="h-40 w-56 object-cover rounded-xl flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity" />
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80" alt="Doha" class="h-40 w-56 object-cover rounded-xl flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity" />
+      <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=300&q=80" alt="Travel" class="h-40 w-56 object-cover rounded-xl flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity" />
+      <!-- Duplicate for seamless loop -->
+      <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=300&q=80" alt="Dubai" class="h-40 w-56 object-cover rounded-xl flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity" />
+      <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=300&q=80" alt="Travel" class="h-40 w-56 object-cover rounded-xl flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity" />
+      <img src="https://images.unsplash.com/photo-1531804055935-76f44d7c3621?w=300&q=80" alt="Muscat" class="h-40 w-56 object-cover rounded-xl flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity" />
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&q=80" alt="Globe" class="h-40 w-56 object-cover rounded-xl flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity" />
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80" alt="Doha" class="h-40 w-56 object-cover rounded-xl flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity" />
+      <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=300&q=80" alt="Travel" class="h-40 w-56 object-cover rounded-xl flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity" />
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ DUBAI VISA FOCUS ═══════════════════════════ -->
+<section id="dubai" class="py-20 bg-gradient-to-b from-sky-navy to-sky-blue/20 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+  <div class="max-w-7xl mx-auto px-5 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div>
+        <div class="section-tag">🇦🇪 UAE Visa Services</div>
+        <h2 class="font-display text-5xl lg:text-6xl mt-4 leading-tight">
+          <span class="text-white">UAE VISA</span><br>
+          <span class="gold-text">CHANGES BY FLIGHT</span>
+        </h2>
+        <p class="text-white/60 mt-5 text-lg leading-relaxed">
+          Travelling via <strong class="text-white">flydubai from Terminal 2</strong>? We handle your visa change on the same day. Corporate tax registration, visit visas, residency — we take you from <span class="text-sky-gold font-semibold">Process to Approval</span>.
+        </p>
+        <!-- Visa Options -->
+        <div class="grid grid-cols-2 gap-4 mt-8">
+          <div class="service-card rounded-2xl p-6 text-center">
+            <p class="font-display text-5xl text-sky-gold">60</p>
+            <p class="text-white/80 font-semibold mt-1">DAYS VISA</p>
+            <p class="text-white/40 text-xs mt-2">Visit Visa UAE</p>
+          </div>
+          <div class="service-card rounded-2xl p-6 text-center">
+            <p class="font-display text-5xl text-sky-gold">30</p>
+            <p class="text-white/80 font-semibold mt-1">DAYS VISA</p>
+            <p class="text-white/40 text-xs mt-2">Visit Visa UAE</p>
+          </div>
+        </div>
+        <!-- Corporate Tax -->
+        <div class="mt-6 p-5 rounded-2xl border border-sky-gold/30 bg-sky-gold/5">
+          <p class="text-sky-gold font-bold text-sm uppercase tracking-widest mb-2">⚠ Corporate Tax Registration</p>
+          <p class="text-white/60 text-sm">UAE Corporate Tax registration is now required. Stay compliant, avoid penalties. Our experts handle the entire process for you.</p>
+        </div>
+        <a href="https://wa.me/971582324891?text=Hi%20Skylink%2C%20I%20need%20help%20with%20UAE%20Visa" target="_blank" class="btn-primary inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold text-white mt-6">
+          <span>Apply via WhatsApp →</span>
+        </a>
+      </div>
+      <!-- Right visual -->
+      <div class="relative">
+        <div class="rounded-3xl overflow-hidden border border-sky-bright/20">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=700&q=80" alt="Dubai skyline Burj Khalifa" class="w-full h-80 lg:h-96 object-cover" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-sky-navy/80 via-transparent to-transparent"></div>
+        </div>
+        <!-- Floating tag -->
+        <div class="absolute bottom-6 left-6 right-6 bg-sky-navy/90 backdrop-blur-lg rounded-2xl p-4 border border-sky-bright/20">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-white/50 text-xs">Dubai Office — 24hr Support</p>
+              <a href="tel:+971582324891" class="text-sky-gold font-bold text-lg hover:underline">+971 58 232 4891</a>
+            </div>
+            <a href="tel:+971582324891" class="btn-gold px-4 py-2 rounded-full text-sm pulse-glow">Call Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ SERVICES ═══════════════════════════ -->
+<section id="services" class="py-20 bg-sky-navy relative">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center mb-14">
+      <div class="section-tag">Complete Solutions</div>
+      <h2 class="font-display text-5xl lg:text-6xl mt-4 grad-text">OUR SERVICES</h2>
+      <p class="text-white/50 mt-4 max-w-xl mx-auto">Everything you need for travel, visas, and document clearing — all under one roof.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+
+      <!-- Card 1 -->
+      <div class="service-card rounded-2xl p-6">
+        <div class="card-icon text-sky-bright mb-4">
+          <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
+        </div>
+        <h3 class="font-bold text-white text-lg">Holidays</h3>
+        <p class="text-white/50 text-sm mt-2 leading-relaxed">Domestic & International holiday packages tailored for you.</p>
+        <a href="#contact" class="text-sky-bright text-sm mt-4 inline-block hover:text-sky-gold transition-colors">Enquire →</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-card rounded-2xl p-6">
+        <div class="card-icon text-sky-bright mb-4">
+          <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+        </div>
+        <h3 class="font-bold text-white text-lg">Flight Booking</h3>
+        <p class="text-white/50 text-sm mt-2 leading-relaxed">IATA-accredited domestic and international flight tickets.</p>
+        <a href="#contact" class="text-sky-bright text-sm mt-4 inline-block hover:text-sky-gold transition-colors">Book Now →</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-card rounded-2xl p-6 relative">
+        <div class="absolute top-4 right-4 bg-sky-gold text-sky-navy text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Popular</div>
+        <div class="card-icon text-sky-bright mb-4">
+          <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        </div>
+        <h3 class="font-bold text-white text-lg">International Visas</h3>
+        <p class="text-white/50 text-sm mt-2 leading-relaxed">From Process to Approval — UAE, Schengen, UK and more.</p>
+        <a href="#dubai" class="text-sky-gold text-sm mt-4 inline-block hover:underline transition-colors">Apply Now →</a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="service-card rounded-2xl p-6">
+        <div class="card-icon text-sky-bright mb-4">
+          <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/></svg>
+        </div>
+        <h3 class="font-bold text-white text-lg">Attestation & Clearing</h3>
+        <p class="text-white/50 text-sm mt-2 leading-relaxed">Document attestation and official clearing services in Dubai.</p>
+        <a href="#contact" class="text-sky-bright text-sm mt-4 inline-block hover:text-sky-gold transition-colors">Get Help →</a>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="service-card rounded-2xl p-6">
+        <div class="card-icon text-sky-bright mb-4">
+          <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064"/></svg>
+        </div>
+        <h3 class="font-bold text-white text-lg">Hajj & Umrah</h3>
+        <p class="text-white/50 text-sm mt-2 leading-relaxed">Complete Hajj and Umrah packages with expert guidance.</p>
+        <a href="#contact" class="text-sky-bright text-sm mt-4 inline-block hover:text-sky-gold transition-colors">Enquire →</a>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="service-card rounded-2xl p-6">
+        <div class="card-icon text-sky-bright mb-4">
+          <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/></svg>
+        </div>
+        <h3 class="font-bold text-white text-lg">Money Exchange</h3>
+        <p class="text-white/50 text-sm mt-2 leading-relaxed">Competitive currency exchange rates for all major currencies.</p>
+        <a href="#contact" class="text-sky-bright text-sm mt-4 inline-block hover:text-sky-gold transition-colors">Check Rates →</a>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="service-card rounded-2xl p-6">
+        <div class="card-icon text-sky-bright mb-4">
+          <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        </div>
+        <h3 class="font-bold text-white text-lg">Passport Services</h3>
+        <p class="text-white/50 text-sm mt-2 leading-relaxed">Passport applications, renewals and all related services.</p>
+        <a href="#contact" class="text-sky-bright text-sm mt-4 inline-block hover:text-sky-gold transition-colors">Learn More →</a>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="service-card rounded-2xl p-6">
+        <div class="card-icon text-sky-bright mb-4">
+          <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <h3 class="font-bold text-white text-lg">Travel Insurance</h3>
+        <p class="text-white/50 text-sm mt-2 leading-relaxed">Comprehensive travel insurance for worry-free journeys.</p>
+        <a href="#contact" class="text-sky-bright text-sm mt-4 inline-block hover:text-sky-gold transition-colors">Get Covered →</a>
+      </div>
+
+      <!-- Card 9 — Bus/Train -->
+      <div class="service-card rounded-2xl p-6">
+        <div class="card-icon text-sky-bright mb-4">
+          <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+        </div>
+        <h3 class="font-bold text-white text-lg">Bus / Train Bookings</h3>
+        <p class="text-white/50 text-sm mt-2 leading-relaxed">Convenient bus and train ticket reservations across routes.</p>
+        <a href="#contact" class="text-sky-bright text-sm mt-4 inline-block hover:text-sky-gold transition-colors">Book Tickets →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ DESTINATIONS ═══════════════════════════ -->
+<section id="destinations" class="py-20 bg-gradient-to-b from-sky-navy to-sky-blue/10">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center mb-14">
+      <div class="section-tag">Where Will You Go?</div>
+      <h2 class="font-display text-5xl lg:text-6xl mt-4 text-white">POPULAR <span class="gold-text">DESTINATIONS</span></h2>
+      <p class="text-white/50 mt-4 max-w-lg mx-auto">Explore the Gulf's most stunning cities with our expert travel packages.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <!-- Dubai -->
+      <div class="dest-card group cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500&q=80" alt="Dubai skyline" loading="lazy" />
+        <div class="absolute inset-0 z-10 flex flex-col justify-end p-5">
+          <p class="text-white/60 text-xs uppercase tracking-widest">UAE</p>
+          <h3 class="font-display text-3xl text-white">DUBAI</h3>
+          <a href="#contact" class="mt-2 text-sky-gold text-sm opacity-0 group-hover:opacity-100 transition-opacity">Explore Packages →</a>
+        </div>
+      </div>
+      <!-- Muscat -->
+      <div class="dest-card group cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1597138804456-e7dca7f59d54?w=500&q=80" alt="Muscat Oman" loading="lazy" />
+        <div class="absolute inset-0 z-10 flex flex-col justify-end p-5">
+          <p class="text-white/60 text-xs uppercase tracking-widest">Oman</p>
+          <h3 class="font-display text-3xl text-white">MUSCAT</h3>
+          <a href="#contact" class="mt-2 text-sky-gold text-sm opacity-0 group-hover:opacity-100 transition-opacity">Explore Packages →</a>
+        </div>
+      </div>
+      <!-- Kuwait -->
+      <div class="dest-card group cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=500&q=80" alt="Kuwait city" loading="lazy" />
+        <div class="absolute inset-0 z-10 flex flex-col justify-end p-5">
+          <p class="text-white/60 text-xs uppercase tracking-widest">Kuwait</p>
+          <h3 class="font-display text-3xl text-white">KUWAIT</h3>
+          <a href="#contact" class="mt-2 text-sky-gold text-sm opacity-0 group-hover:opacity-100 transition-opacity">Explore Packages →</a>
+        </div>
+      </div>
+      <!-- Doha -->
+      <div class="dest-card group cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=500&q=80" alt="Doha Qatar skyline" loading="lazy" />
+        <div class="absolute inset-0 z-10 flex flex-col justify-end p-5">
+          <p class="text-white/60 text-xs uppercase tracking-widest">Qatar</p>
+          <h3 class="font-display text-3xl text-white">DOHA</h3>
+          <a href="#contact" class="mt-2 text-sky-gold text-sm opacity-0 group-hover:opacity-100 transition-opacity">Explore Packages →</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-10">
+      <a href="#contact" class="btn-primary inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold text-white">
+        <span>View All Destinations →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ ABOUT / TRUST ═══════════════════════════ -->
+<section id="about" class="py-20 bg-sky-navy">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div>
+        <div class="section-tag">Why Choose Us</div>
+        <h2 class="font-display text-5xl lg:text-6xl mt-4 text-white leading-tight">
+          BUILD YOUR DREAM<br><span class="gold-text">BUSINESS &</span><br>JOURNEY
+        </h2>
+        <p class="text-white/60 mt-5 leading-relaxed">
+          From choosing the right business activity to securing your license, processing your UAE visa to booking your dream holiday — Skylink makes every step <span class="text-white font-semibold">simple and smooth</span>.
+        </p>
+        <p class="text-white/60 mt-4 leading-relaxed">
+          With offices in <strong class="text-white">Dubai, Kuttiady and Nadapuram</strong>, we serve the Kerala-UAE community with pride, expertise, and a genuine commitment to your success.
+        </p>
+        <div class="grid grid-cols-3 gap-5 mt-8">
+          <div class="text-center p-4 bg-sky-blue/10 rounded-2xl border border-sky-blue/20">
+            <p class="font-display text-3xl text-sky-gold">3</p>
+            <p class="text-white/50 text-xs mt-1">Offices</p>
+          </div>
+          <div class="text-center p-4 bg-sky-blue/10 rounded-2xl border border-sky-blue/20">
+            <p class="font-display text-3xl text-sky-gold">10+</p>
+            <p class="text-white/50 text-xs mt-1">Services</p>
+          </div>
+          <div class="text-center p-4 bg-sky-blue/10 rounded-2xl border border-sky-blue/20">
+            <p class="font-display text-3xl text-sky-gold">IATA</p>
+            <p class="text-white/50 text-xs mt-1">Accredited</p>
+          </div>
+        </div>
+      </div>
+      <!-- Trust badges grid -->
+      <div class="grid grid-cols-2 gap-4">
+        <div class="service-card rounded-2xl p-6 col-span-2">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 rounded-xl bg-sky-gold/10 border border-sky-gold/30 flex items-center justify-center text-2xl">🏆</div>
+            <div>
+              <h4 class="font-bold text-white">IATA Accredited Agency</h4>
+              <p class="text-white/50 text-sm mt-1">Internationally certified for flight ticketing and travel services worldwide.</p>
+            </div>
+          </div>
+        </div>
+        <div class="service-card rounded-2xl p-6">
+          <div class="text-3xl mb-3">📋</div>
+          <h4 class="font-semibold text-white text-sm">Process to Approval</h4>
+          <p class="text-white/50 text-xs mt-2">We handle your visa from start to finish.</p>
+        </div>
+        <div class="service-card rounded-2xl p-6">
+          <div class="text-3xl mb-3">⚡</div>
+          <h4 class="font-semibold text-white text-sm">Same Day Service</h4>
+          <p class="text-white/50 text-xs mt-2">Urgent visa processing available.</p>
+        </div>
+        <div class="service-card rounded-2xl p-6">
+          <div class="text-3xl mb-3">🌐</div>
+          <h4 class="font-semibold text-white text-sm">Kerala-UAE Connect</h4>
+          <p class="text-white/50 text-xs mt-2">Serving the Kerala community in UAE.</p>
+        </div>
+        <div class="service-card rounded-2xl p-6">
+          <div class="text-3xl mb-3">📞</div>
+          <h4 class="font-semibold text-white text-sm">3 Contact Points</h4>
+          <p class="text-white/50 text-xs mt-2">Dubai, Kuttiady, Nadapuram offices.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ CTA BANNER ═══════════════════════════ -->
+<section class="py-16 relative overflow-hidden" style="background: linear-gradient(135deg, #0D2B6B 0%, #1A4FBB 50%, #0D2B6B 100%);">
+  <div class="absolute inset-0 opacity-10" style="background: url('https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=1200') center/cover;"></div>
+  <div class="max-w-4xl mx-auto px-5 text-center relative z-10">
+    <p class="section-tag mx-auto">Limited Time Offer</p>
+    <h2 class="font-display text-5xl lg:text-6xl mt-4 text-white">READY TO <span class="gold-text">FLY?</span></h2>
+    <p class="text-white/70 mt-4 text-lg max-w-2xl mx-auto">Contact our Dubai office today for all your travel, visa and document clearing needs. Fast, professional, stress-free.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+      <a href="https://wa.me/971582324891?text=Hi%20Skylink%2C%20I%27d%20like%20to%20enquire%20about%20your%20services" target="_blank" class="btn-gold px-8 py-4 rounded-full font-bold text-base flex items-center gap-3 justify-center">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Us Now
+      </a>
+      <a href="tel:+971582324891" class="px-8 py-4 rounded-full font-bold text-white border-2 border-white/30 hover:border-white transition-all text-base flex items-center gap-3 justify-center">
+        📞 +971 58 232 4891
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+<section id="contact" class="py-20 bg-sky-navy">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center mb-14">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="font-display text-5xl lg:text-6xl mt-4 text-white">OUR <span class="gold-text">OFFICES</span></h2>
+    </div>
+
+    <!-- Contact Form + Offices -->
+    <div class="grid lg:grid-cols-5 gap-8">
+      <!-- Form -->
+      <div class="lg:col-span-3 service-card rounded-3xl p-8">
+        <h3 class="font-bold text-white text-xl mb-6">Send Us a Message</h3>
+        <div class="space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="text-white/50 text-xs uppercase tracking-widest block mb-2">Full Name</label>
+              <input type="text" placeholder="Your name" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-sky-bright transition-colors" />
+            </div>
+            <div>
+              <label class="text-white/50 text-xs uppercase tracking-widest block mb-2">Phone</label>
+              <input type="tel" placeholder="+971 or +91..." class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-sky-bright transition-colors" />
+            </div>
+          </div>
+          <div>
+            <label class="text-white/50 text-xs uppercase tracking-widest block mb-2">Email</label>
+            <input type="email" placeholder="your@email.com" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-sky-bright transition-colors" />
+          </div>
+          <div>
+            <label class="text-white/50 text-xs uppercase tracking-widest block mb-2">Service Required</label>
+            <select class="w-full bg-sky-navy border border-white/10 rounded-xl px-4 py-3 text-white/70 focus:outline-none focus:border-sky-bright transition-colors">
+              <option>Select a service...</option>
+              <option>UAE Visit Visa (30/60 Days)</option>
+              <option>Flight Booking</option>
+              <option>Holidays Package</option>
+              <option>Hajj & Umrah</option>
+              <option>Attestation & Document Clearing</option>
+              <option>Corporate Tax Registration</option>
+              <option>Money Exchange</option>
+              <option>Passport Services</option>
+              <option>Travel Insurance</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-white/50 text-xs uppercase tracking-widest block mb-2">Message</label>
+            <textarea rows="4" placeholder="Tell us about your requirements..." class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-sky-bright transition-colors resize-none"></textarea>
+          </div>
+          <a href="mailto:skylinktravelme@gmail.com" class="btn-primary w-full py-4 rounded-xl font-bold text-white text-center block">
+            <span>Send Enquiry →</span>
+          </a>
+          <p class="text-white/30 text-xs text-center">Or email us: <a href="mailto:skylinktravelme@gmail.com" class="text-sky-bright hover:underline">skylinktravelme@gmail.com</a></p>
+        </div>
+      </div>
+
+      <!-- Office Cards -->
+      <div class="lg:col-span-2 flex flex-col gap-5">
+        <!-- Dubai -->
+        <div class="service-card rounded-2xl p-6 border-l-4 border-sky-gold">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-2xl">🇦🇪</span>
+            <div>
+              <p class="font-bold text-white">Dubai Office</p>
+              <p class="text-white/40 text-xs">Primary — UAE Operations</p>
+            </div>
+          </div>
+          <p class="text-white/60 text-sm mb-3">RKM Building, 2nd floor<br>Office No. 227, Hor Al Anz, Dubai</p>
+          <div class="space-y-2">
+            <a href="tel:+971582324891" class="flex items-center gap-2 text-sky-gold hover:underline text-sm font-semibold">📞 +971 58 232 4891</a>
+            <a href="tel:+971582324892" class="flex items-center gap-2 text-sky-gold hover:underline text-sm font-semibold">📞 +971 58 232 4892</a>
+            <a href="tel:+971582324893" class="flex items-center gap-2 text-sky-gold hover:underline text-sm font-semibold">📞 +971 58 232 4893</a>
+            <a href="mailto:skylinktravelme@gmail.com" class="flex items-center gap-2 text-sky-bright hover:underline text-sm">✉ skylinktravelme@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- Kuttiady -->
+        <div class="service-card rounded-2xl p-6 border-l-4 border-sky-bright">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-2xl">🇮🇳</span>
+            <div>
+              <p class="font-bold text-white">Kuttiady Office</p>
+              <p class="text-white/40 text-xs">Kerala, India</p>
+            </div>
+          </div>
+          <p class="text-white/60 text-sm mb-3">Near Petrol Pump<br>Wayanad Road, Kuttiady</p>
+          <a href="tel:+916235199299" class="flex items-center gap-2 text-sky-bright hover:underline text-sm font-semibold">📞 +91 6235 199 299</a>
+        </div>
+
+        <!-- Nadapuram -->
+        <div class="service-card rounded-2xl p-6 border-l-4 border-sky-bright">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-2xl">🇮🇳</span>
+            <div>
+              <p class="font-bold text-white">Nadapuram Office</p>
+              <p class="text-white/40 text-xs">Kerala, India</p>
+            </div>
+          </div>
+          <p class="text-white/60 text-sm mb-3">Near Bustand Road<br>Nadapuram</p>
+          <a href="tel:+916235199699" class="flex items-center gap-2 text-sky-bright hover:underline text-sm font-semibold">📞 +91 6235 199 699</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<footer class="bg-[#060F1E] pt-16 pb-8 border-t border-sky-blue/20">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <!-- Brand -->
+      <div class="sm:col-span-2 lg:col-span-1">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full bg-sky-blue flex items-center justify-center border-2 border-sky-bright">
+            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-white"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
+          </div>
+          <div>
+            <span class="font-display text-2xl tracking-wide text-white">skylink</span>
+            <p class="text-[9px] text-sky-bright/60 tracking-widest uppercase -mt-1">Travel & Document Clearing</p>
+          </div>
+        </div>
+        <p class="text-white/40 text-sm leading-relaxed mb-4">Trusted travel experts serving the UAE and Kerala community since inception. IATA accredited.</p>
+        <!-- Social -->
+        <div class="flex gap-3">
+          <a href="https://www.instagram.com/skylinktravels.ae" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:border-sky-gold hover:text-sky-gold text-white/60 transition-all">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/skylinktravels.ae" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:border-sky-gold hover:text-sky-gold text-white/60 transition-all">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://wa.me/971582324891" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:border-sky-gold hover:text-sky-gold text-white/60 transition-all">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+        <!-- IATA Badge -->
+        <div class="mt-5 inline-flex items-center gap-2 border border-sky-gold/30 rounded-full px-4 py-2 bg-sky-gold/5">
+          <span class="text-sky-gold font-bold text-sm">IATA</span>
+          <span class="text-white/40 text-xs">Accredited Agent</span>
+        </div>
+      </div>
+
+      <!-- Services Links -->
+      <div>
+        <p class="text-white/40 text-xs uppercase tracking-widest mb-5">Services</p>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#dubai" class="text-white/60 hover:text-sky-gold transition-colors">UAE Visit Visa</a></li>
+          <li><a href="#services" class="text-white/60 hover:text-sky-gold transition-colors">Flight Booking</a></li>
+          <li><a href="#services" class="text-white/60 hover:text-sky-gold transition-colors">Hajj & Umrah</a></li>
+          <li><a href="#services" class="text-white/60 hover:text-sky-gold transition-colors">Attestation</a></li>
+          <li><a href="#services" class="text-white/60 hover:text-sky-gold transition-colors">Money Exchange</a></li>
+          <li><a href="#services" class="text-white/60 hover:text-sky-gold transition-colors">Travel Insurance</a></li>
+          <li><a href="#services" class="text-white/60 hover:text-sky-gold transition-colors">Passport Services</a></li>
+        </ul>
+      </div>
+
+      <!-- Destinations -->
+      <div>
+        <p class="text-white/40 text-xs uppercase tracking-widest mb-5">Destinations</p>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#destinations" class="text-white/60 hover:text-sky-gold transition-colors">Dubai, UAE</a></li>
+          <li><a href="#destinations" class="text-white/60 hover:text-sky-gold transition-colors">Muscat, Oman</a></li>
+          <li><a href="#destinations" class="text-white/60 hover:text-sky-gold transition-colors">Kuwait City</a></li>
+          <li><a href="#destinations" class="text-white/60 hover:text-sky-gold transition-colors">Doha, Qatar</a></li>
+          <li><a href="#contact" class="text-white/60 hover:text-sky-gold transition-colors">International</a></li>
+        </ul>
+      </div>
+
+      <!-- Quick Contact -->
+      <div>
+        <p class="text-white/40 text-xs uppercase tracking-widest mb-5">Quick Contact</p>
+        <div class="space-y-4">
+          <div>
+            <p class="text-white/30 text-xs mb-1">🇦🇪 Dubai</p>
+            <a href="tel:+971582324891" class="text-white/80 text-sm hover:text-sky-gold transition-colors block font-medium">+971 58 232 4891</a>
+            <a href="tel:+971582324892" class="text-white/80 text-sm hover:text-sky-gold transition-colors block">+971 58 232 4892</a>
+            <a href="tel:+971582324893" class="text-white/80 text-sm hover:text-sky-gold transition-colors block">+971 58 232 4893</a>
+          </div>
+          <div>
+            <p class="text-white/30 text-xs mb-1">🇮🇳 Kuttiady</p>
+            <a href="tel:+916235199299" class="text-white/80 text-sm hover:text-sky-gold transition-colors block">+91 6235 199 299</a>
+          </div>
+          <div>
+            <p class="text-white/30 text-xs mb-1">🇮🇳 Nadapuram</p>
+            <a href="tel:+916235199699" class="text-white/80 text-sm hover:text-sky-gold transition-colors block">+91 6235 199 699</a>
+          </div>
+          <div>
+            <p class="text-white/30 text-xs mb-1">✉ Email</p>
+            <a href="mailto:skylinktravelme@gmail.com" class="text-sky-bright text-sm hover:underline break-all">skylinktravelme@gmail.com</a>
+          </div>
+          <div>
+            <p class="text-white/30 text-xs mb-1">🌐 Website</p>
+            <a href="https://www.dreamskylink.com" class="text-sky-bright text-sm hover:underline">www.dreamskylink.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider-line mb-6"></div>
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-white/30">
+      <p>© 2026 Skylink Travel & Document Clearing. Dream LLC. All rights reserved.</p>
+      <p>www.dreamskylink.com | skylinktravels.ae</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════ WHATSAPP FLOAT ═══════════════════════════ -->
+<a href="https://wa.me/971582324891?text=Hi%20Skylink%2C%20I%27d%20like%20to%20enquire%20about%20your%20services" target="_blank" class="wa-float" title="Chat on WhatsApp" aria-label="WhatsApp">
+  <svg class="w-7 h-7 fill-white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    if (window.scrollY > 60) nav.classList.add('nav-scroll');
+    else nav.classList.remove('nav-scroll');
+  });
+
+  // Mobile menu
+  function toggleMenu() {
+    const m = document.getElementById('mobile-menu');
+    m.classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('mobile-menu').classList.remove('open');
+  }
+
+  // Scroll-triggered animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.service-card, .dest-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
