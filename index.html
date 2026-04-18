@@ -862,38 +862,41 @@
   </svg>
 
 </a>
-  // Navbar scroll effect
-  window.addEventListener('scroll', () => {
-    const nav = document.getElementById('navbar');
-    if (window.scrollY > 60) nav.classList.add('nav-scroll');
-    else nav.classList.remove('nav-scroll');
-  });
-
-  // Mobile menu
-  function toggleMenu() {
-    const m = document.getElementById('mobile-menu');
-    m.classList.toggle('open');
+ <script>
+// Navbar scroll effect
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  if (window.scrollY > 60) {
+    nav.classList.add('nav-scroll');
+  } else {
+    nav.classList.remove('nav-scroll');
   }
-  function closeMenu() {
-    document.getElementById('mobile-menu').classList.remove('open');
-  }
+});
 
-  // Scroll-triggered animations
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.opacity = '1';
-        e.target.style.transform = 'translateY(0)';
-      }
-    });
-  }, { threshold: 0.1 });
+// Mobile menu
+function toggleMenu() {
+  const m = document.getElementById('mobile-menu');
+  m.classList.toggle('open');
+}
 
-  document.querySelectorAll('.service-card, .dest-card').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    observer.observe(el);
+function closeMenu() {
+  document.getElementById('mobile-menu').classList.remove('open');
+}
+
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+    }
   });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.service-card, .dest-card').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+  observer.observe(el);
+});
 </script>
-</body>
-</html>
