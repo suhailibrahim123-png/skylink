@@ -41,36 +41,21 @@
     body { font-family: 'Outfit', sans-serif; background: #0A1628; color: #fff; overflow-x: hidden; }
 
     /* ── LOGO STYLES ── */
-    .logo-container {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      line-height: 1;
-    }
-    .logo-dream {
-      font-size: 12px;
-      font-weight: 300;
-      letter-spacing: 5px;
-      text-transform: lowercase;
-      color: rgba(255,255,255,0.8);
-      margin-bottom: 2px;
-    }
-    .logo-skylink {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 28px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      color: white;
-      line-height: 1;
-    }
-    .logo-tagline {
-      font-size: 8px;
-      font-weight: 400;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: #93C5FD;
-      margin-top: 2px;
-    }
+<a href="#home" class="flex items-center gap-3">
+  
+  <!-- Logo Icon -->
+  <img src="logo-icon.png" 
+       alt="Dream Skylink Logo" 
+       class="w-10 h-10 object-contain">
+
+  <!-- Text Logo -->
+  <div class="logo-container">
+    <span class="logo-dream">dream</span>
+    <span class="logo-skylink">SKYLINK</span>
+    <span class="logo-tagline">TRAVEL & DOCUMENTS CLEARING</span>
+  </div>
+
+</a>
 
     /* ── HERO ── */
     .hero-bg {
